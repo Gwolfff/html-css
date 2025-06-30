@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Zombi';
+            src: url('fonts/Zombie.otf') format('opentype'), url('fonts/Zombie.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        /*
+           Quando for colocar fontes externas sempre usar um seletor especial:
+           @font-face
+        */
+
+        /*
+        Tipos de format()
+        - opentype (otf)
+        - truetype (ttf)
+        - embedded-opentype
+        - truetype-aat (Apple Advanced Typography)
+        - svg
+        */
+
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-family: 'Zombi', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá mundo</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat autem, sequi rem quisquam delectus optio cupiditate molestiae totam aut voluptate veritatis ipsam maxime! Dolores corporis sed amet fugiat doloribus perferendis?</p>
+</body>
+</html>

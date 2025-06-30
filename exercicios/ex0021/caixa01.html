@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de ciaxas</title>
+    <style>
+        h1{
+            /* Box-Level */
+
+            background-color: lightgray;
+
+            height: 300px;
+            width: 300px;
+            /*
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            */
+
+            border: 10PX SOLID darkslategray;
+            border-radius: 10px;
+
+            padding: 10px 20px;
+
+            margin: 20px auto 40px auto;
+
+            outline: 5px dashed salmon;
+
+
+
+        }
+
+        a {
+            /* Inline-Level */
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+            /*
+            Border-radius = E para aredondar as pontas da caixa
+            */
+            border-radius: 10px;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+
+        #p2 {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #000000;
+            color: #f23657;
+            border: 10px solid blue;
+            padding: 5px 10px;
+            margin: 30px 10px 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+
+    <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident laboriosam ullam molestias quae ea eligendi vel pariatur labore, explicabo at rerum est deserunt quasi cum similique dicta velit magni autem!</p>
+
+    <p>Lorem <sub>3333</sub> ipsum <sup>9999</sup>, dolor sit amet consectetur adipisicing elit. Ipsam similique quia praesentium dolores temporibus quos veritatis, deleniti ducimus quam reprehenderit, assumenda est cupiditate omnis repudiandae itaque aliquid nam blanditiis eum?</p>
+</body>
+</html>

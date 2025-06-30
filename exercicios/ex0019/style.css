@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
+
+/*
+ fonte do tilulo ( font-family: "Dancing Script", cursive;
+                   font-optical-sizing: auto;
+                   font-weight: <weight>;
+                   font-style: normal;      )
+ 
+ fonte do h1 ( font-family: "Birthstone", cursive;
+               font-weight: 400;
+               font-style: normal;    )
+
+ fonte do h2 ( font-family: "Lobster", sans-serif;
+               font-weight: 400;
+               font-style: normal;    )
+
+ fonte do p ( font-family: "Lugrasimo", cursive;
+              font-weight: 400;
+              font-style: normal;     )
+
+*/
+
+/*  
+    em HTML é id = em CSS é #
+    em HTML é class = em CSS é .
+
+*/
+
+body {
+       background-color: rgb(174, 235, 174);
+}
+
+h1#principal {
+    font-family: "Dancing Script", cursive;
+    font-style: normal;
+    font-size: 4em;
+    text-align: center;
+    background-color: green;
+    color: rgb(255, 154, 12);
+}
+
+
+h1 {
+    font-family: "Birthstone", cursive;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 2.5em;
+    color: rgb(232, 120, 14);
+    text-align: center;
+}
+
+h2 {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(57, 240, 57);
+    text-indent: 3em;
+}
+
+.subtitulo {
+    background-color:  rgba(211, 112, 20, 0.653);
+}
+
+.subtitulo2 {
+    background-color:  rgba(20, 80, 211, 0.653);
+}
+
+.subtitulo3 {
+    background-color:  rgba(211, 39, 20, 0.653);
+}
+p {
+    font-family: "Lugrasimo", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-indent: 1.5em;
+    text-align: justify;
+}
