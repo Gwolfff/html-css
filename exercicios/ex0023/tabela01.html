@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        tr.linha {
+            background-color: gray;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        td.dado {
+            background-color: yellow;
+        }
+
+
+
+        td.mug {
+            background-color: red;
+            color: white;
+        }
+
+        td.morto {
+            background-color: rgba(0, 0, 0, 0.666);
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Minha primeira Tabela</h1>
+
+    <table>
+        <tr> <!--PRIMEIRA LINHA-->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr class="linha">
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td class="dado">B4</td>
+            <td>C4</td>
+        </tr>
+        <tr>
+            <td>A5</td>
+            <td>B5</td>
+        </tr>
+        <tr>
+            <td>A6</td>
+        </tr>
+    </table>
+
+    <h1>Testando uma segunda tabela</h1>
+    <table>
+        <tr>
+            <td class="mug">Luffy</td>
+            <td class="morto">Ace</td>
+            <td>Sabo</td>
+        </tr>
+        <tr>
+            <td class="mug">Zoro</td>
+            <td class="morto">Kuina</td>
+            <td>Espadas</td>
+        </tr>
+        <tr>
+            <td class="mug">Nami</td>
+            <td>Nojiko</td>
+            <td class="morto">Bell-mery</td>
+        </tr>
+        <tr>
+            <td class="mug">Usopp</td>
+            <td class="morto">Banchina</td>
+            <td>Yasopp</td>
+        </tr>
+        <tr>
+            <td class="mug">Sanji</td>
+            <td class="morto">Sora</td>
+            <td>Jeff</td>
+        </tr>
+        <tr>
+            <td class="mug">Chopper</td>
+            <td class="morto">Dr.Hiriluk</td>
+            <td>Dr.Kureha</td>
+        </tr>
+        <tr>
+            <td class="mug">Robin</td>
+            <td class="morto">Olivia</td>
+            <td>Saul</td>
+        </tr>
+        <tr>
+            <td class="mug">Franky</td>
+            <td class="morto">Tom</td>
+            <td>Iceburg</td>
+        </tr>
+        <tr>
+            <td class="mug">Brook</td>
+            <td>Laboon</td>
+            <td>Crocus</td>
+        </tr>
+        <tr>
+            <td class="mug">Jimbei</td>
+            <td class="morto">Fisher Tiger</td>
+            <td class="morto">Barba branca</td>
+        </tr>
+    </table>
+</body>
+</html>
