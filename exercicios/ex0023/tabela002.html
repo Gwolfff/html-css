@@ -20,6 +20,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -31,12 +32,17 @@
         }
 
         thead, tfoot {
-            background-color: rgb(16, 15, 15);
+            background-color: #383838;
             color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
         }
 
         tbody > tr:nth-child(odd) {
-            background-color: rgb(31, 250, 239);
+            background-color: rgb(255, 255, 255);
         }
 
         tbody > tr:nth-child(even) {
