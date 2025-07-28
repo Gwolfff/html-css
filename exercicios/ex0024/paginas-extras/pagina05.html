@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        body {
+            background-color: cadetblue;
+            color: white;
+            font-size: 23px;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            background-color: white;
+            color: black;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        a:hover {
+            color: blue;
+        }
+
+        p {
+            text-align: center;
+            background-color: black;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" onclick="clicou()">Clique em mim</a>
+    <div id="saida"></div>
+
+
+
+
+    <script>
+        function clicou() {
+            s = window.document.getElementById("saida")
+            s.innerHTML += '<p>Você clicou!</p>'
+        }
+    </script>
+</body>
+</html>
