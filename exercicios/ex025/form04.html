@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            margin: 30px;
+        }
+
+        form label {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        fieldset {
+            border: 3px dashed black;
+            padding: 25px 25px 25px 10px;
+        }
+
+        fieldset p input {
+            border: 2px solid rgb(7, 7, 7);
+            border-radius: 5px;
+            margin-left: 10px;
+            padding: 3px;
+            margin-top: 9px;
+        }
+
+        fieldset legend {
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        #botoes {
+            padding: 10px;
+        }
+
+        .botao {
+            border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 1px 2px 3px black;
+            padding: 7px;
+            background-color: rgb(129, 127, 127);
+            font-weight: bold;
+            color: white;
+        }
+
+        .botao:hover {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulários</h1>
+    <form action="cadatro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome: </label>
+                <input type="text" name="nome" id="inome" required autocomplete="name" minlength="15" maxlength="30" size="17" placeholder="Digite seu Nome">
+            </p>
+            <p>
+                <label for="iemail">Email:</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="Digite seu Email">
+            </p>
+            <p>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$"  required placeholder="(xx)xxxx-xxxx">
+            </p>
+        </fieldset>
+        <!-- Estudar sobre RegEx -->
+        <p id="botoes">
+            <input type="submit" value="Enviar" class="botao">
+            <input type="reset" value="Limpar" class="botao">
+        </p>
+    </form>
+</body>
+</html>
