@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexibe box</title>
+    <style>
+        div.container {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 200px;
+            
+        }
+        
+        div#cxA {
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+
+        div#cxB {
+            flex-shrink: 1;
+            flex-grow: 2;
+        }
+
+        div#cxC {
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="cxA">oi eu sou como um dragão, e meixo com tudo que toco e vou deixar o jogo mais divertido, mais posso também dixar mais cruel vai depender da minha vontade, isso que eu chamo de cachorro quente mais eu não sei o que fazer mais e isso.</div>
+        <div class="item" id="cxB">oi eu sou como um dragão, e meixo com tudo que toco e vou deixar o jogo mais divertido, mais posso também dixar mais cruel vai depender da minha vontade, isso que eu chamo de cachorro quente mais eu não sei o que fazer mais e isso.</div>
+        <div class="item" id="cxC">oi eu sou como um dragão, e meixo com tudo que toco e vou deixar o jogo mais divertido, mais posso também dixar mais cruel vai depender da minha vontade, isso que eu chamo de cachorro quente mais eu não sei o que fazer mais e isso.</div>
+    </div>
+</body>
+</html>
